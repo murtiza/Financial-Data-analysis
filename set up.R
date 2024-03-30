@@ -4,6 +4,6 @@
 
 print(head(iris))
 
-mydata <- datasets::attitude
+mydata <- datasets::JohnsonJohnson
 
 

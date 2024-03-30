@@ -1,0 +1,60 @@
+---
+title: "Financial data Analysis"
+autor: "Murtiza"
+date: last-modified
+toc: true
+format: 
+  html: default
+  pdf: default
+---
+
+## Introduction
+
+Analyzing Johnson & Johnson's quarterly earnings data from 1960 to 1980 offers a comprehensive understanding of the company's financial performance, facilitates investment decision-making, and provides insights into its strategic management and competitive position in the market.
+
+## Research Questions
+
+1.  asdfasfasf
+2.  sdafasdfas
+3.  dfasddfasdfas
+
+```{r libraries, message=FALSE, warning=FALSE, echo=FALSE}
+
+library(datasets)
+library(ggplot2)
+library(dplyr)
+library(tsbox)
+library(knitr)
+```
+
+## Data-set Introduction
+
+Johnson & Johnson's quarterly earnings data from 1960 to 1980.
+
+Link: [https://quarto.org/docs/output-formats/html-multi-format.htmlhttps://quarto.org/docs/output-formats/html-multi-format.html](https://quarto.org/docs/output-formats/html-multi-format.html)
+
+```{r dataset_intro, warning=F, message=F}
+
+mydata <- datasets::JohnsonJohnson
+mydata <- ts_df(mydata)
+
+
+variables<- colnames(mydata)
+explanations <- c("Quarterly date from 1960  to 1980",
+                  "Earnings in dollar (milllion)")
+var_expl<- data_frame(variables,explanations )
+
+kable(var_expl)
+
+
+
+```
+
+### Dataset details
+
+```{r details}
+
+
+
+
+```
