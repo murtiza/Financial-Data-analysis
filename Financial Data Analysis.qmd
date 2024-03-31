@@ -14,7 +14,7 @@ Analyzing Johnson & Johnson's quarterly earnings data from 1960 to 1980 offers a
 
 ## Research Questions
 
-1.  asdfasfasf
+1.  dasfasdfa
 2.  sdafasdfas
 3.  dfasddfasdfas
 
@@ -25,18 +25,29 @@ library(ggplot2)
 library(dplyr)
 library(tsbox)
 library(knitr)
+
 ```
 
 ## Data-set Introduction
 
-Johnson & Johnson's quarterly earnings data from 1960 to 1980.
+Johnson & Johnson's quarterly earnings data from 1960 to 1980. 3-4 sentences
 
 Link: [https://quarto.org/docs/output-formats/html-multi-format.htmlhttps://quarto.org/docs/output-formats/html-multi-format.html](https://quarto.org/docs/output-formats/html-multi-format.html)
 
 ```{r dataset_intro, warning=F, message=F}
 
+# mydata <- readr::read_csv()
+
+
+# kable(caption = "adfasdfbjaskbfdlai")
+
 mydata <- datasets::JohnsonJohnson
 mydata <- ts_df(mydata)
+
+head(mydata, 5)
+
+colnames(mydata)
+kable(colnames(mydata), caption = "asdfasdfa" )
 
 
 variables<- colnames(mydata)
@@ -52,9 +63,30 @@ kable(var_expl)
 
 ### Dataset details
 
-```{r details}
+```{r}
 
 
+Nob <- nrow(mydata)
+Nva<- ncol(mydata)
+
+A  = 5
+
+# paste0("Qianyuan", "is a good and ", " handsome guy")
+# print(paste0("my data has ", nrow(mydata), " number of rows and ", ncol(mydata), " number of variables" ))
+
+```
+
+```         
+
+
+
+
+```
+
+my data has `{r} Nob` number of rows and `{r} A` number of variables.\
+
+```{r}
+# ![Name](name.png){fig-align="left"}
 
 
 ```
